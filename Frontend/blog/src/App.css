@@ -1,0 +1,26 @@
+@import "tailwindcss";
+#root {
+  margin: 0 auto;
+  padding: 0rem;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: black; /* Tailwind's gray-100 */
+  color:green; /* Tailwind's gray-800 */
+  margin: 0;
+  padding: 0;
+}
+@keyframes blink {
+  0%, 100% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+.animate-blink {
+  animation: blink 1s ease-in-out infinite;
+}
