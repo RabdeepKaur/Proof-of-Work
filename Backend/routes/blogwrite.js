@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Blog = require('../models/Blog'); // Adjust path to your Blog model
+const Blog = require('../Models/blog');
 
 // Middleware to check access
 const checkAdminAccess = (req, res, next) => {
@@ -17,14 +17,13 @@ const checkAdminAccess = (req, res, next) => {
 
 // GET - Serve blog writing form/page
 router.get('/write', checkAdminAccess, (req, res) => {
-  res.render('write-blog'); // If using template engine
-  // OR for API: res.json({ success: true, message: 'Admin access granted' });
+  res.render('write-blog'); 
 });
 
 // POST - Create new blog
 router.post('/write', checkAdminAccess, async (req, res) => {
   try {
-    const { title, content, projectId, published } = req.body; // Added projectId
+    const { title, content, projectId, published } = req.body; 
 
     if (!title || !content) {
       return res.status(400).json({

@@ -5,6 +5,7 @@ function Projects() {
      const projects = [
     {
       title: "Project 1",
+      id:" ",
       description: "This is a brief description of Project 1.",
       imageUrl: "https://via.placeholder.com/300x200",
       techStack: ["React", "Tailwind", "Node.js"],
@@ -12,6 +13,7 @@ function Projects() {
     },
     {
       title: "Project 2",
+      id:"",
       description: "This is a brief description of Project 2.",
       imageUrl: "https://via.placeholder.com/300x200",
       techStack: ["Next.js", "MongoDB", "Express"],
@@ -19,6 +21,7 @@ function Projects() {
     },
     {
       title: "Project 3",
+      id:"",
       description: "This is a brief description of Project 3.",
       imageUrl: "https://via.placeholder.com/300x200",
       techStack: ["Three.js", "Blender", "GSAP"],
