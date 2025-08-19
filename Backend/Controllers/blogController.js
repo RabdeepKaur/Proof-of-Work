@@ -25,7 +25,7 @@ exports.getBlogByproject=async(res,res)=>{
         const {projectId} =req.params;
         const blog=await Blog.find({projectId,published:true})
         .sort({createdAt:-1})
-        .select({'title conent whcih was creat eat and filter by projectid'})
+        .select('title content createdAt projectId')
 
         if(!blog.length){
             return res.status(404).json({success:false,message:"blog cannot be found",error:message.error})
@@ -35,5 +35,7 @@ exports.getBlogByproject=async(res,res)=>{
             project:PROJECTS[projectId]
         }));
         res.json
+    }catch(error){
+        res.status(500).json({success:false,message:"error in getting the blog",error:error.message})
     }
 }

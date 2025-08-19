@@ -10,7 +10,7 @@ function ProjectCard({ title, description, imageUrl, techStack, link }) {
       />
 
       {/* Project Title */}
-      <h2 className="text-xl text-green-400 font-bold mb-2 truncate">
+      <h2 className="text-xl text-White font-bold mb-2 truncate">
         {title}
       </h2>
 
@@ -24,7 +24,7 @@ function ProjectCard({ title, description, imageUrl, techStack, link }) {
         {techStack.map((tech, index) => (
           <span
             key={index}
-            className="bg-green-800 text-white text-xs font-medium px-2 py-1 rounded-full"
+            className="bg-white text-black text-xs font-medium px-2 py-1 rounded-full"
           >
             {tech}
           </span>

@@ -4,15 +4,15 @@ function Navbar() {
       <div className="flex flex-col lg:flex-row justify-between items-center max-w-7xl mx-auto">
         
         {/* Logo / Brand */}
-        <div className="text-white text-2xl font-bold mb-3 lg:mb-0">
+        <div className="text-white text-4xl font-bold mb-3 lg:mb-0">
           <a href="/" className="hover:text-green-400 transition-colors">
             Proof of Work
           </a>
         </div>
 
-        {/* Navigation Links */}
-        <div className="flex flex-col lg:flex-row items-center gap-4 cursor-pointer">
-          <a href="/" className="text-white hover:text-green-400 transition-colors">
+    
+        <div className="flex flex-col lg:flex-row items-center gap-8 cursor-pointer text-4xl">
+          <a href="/Projects.jsx" className="text-white hover:text-green-400 transition-colors">
             Project
           </a>
           <a href="/Blog" className="text-white hover:text-green-400 transition-colors">

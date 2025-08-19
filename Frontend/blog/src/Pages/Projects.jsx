@@ -1,31 +1,33 @@
 import ProjectCard from "../Componenets/ProjectCard";
 import Card from "../Componenets/Card"
+import landingpage from "../assets/landingpage.png";
+import lockme from "../assets/lockme.png";
 
 function Projects() {
      const projects = [
     {
-      title: "Project 1",
-      id:" ",
-      description: "This is a brief description of Project 1.",
-      imageUrl: "https://via.placeholder.com/300x200",
-      techStack: ["React", "Tailwind", "Node.js"],
-      link: "#",
+      title: "RejectMe (80+ views and 36 on peerlist )",
+      id:"1 ",
+      description: "RejectMe is a AI based application that solves the growing problem of candidate ghosting in the recruitment process. Instead of leaving candidates in the dark, companies can generate thoughtful, personalized rejection emails in just one click.",
+       imageUrl: landingpage,
+      techStack: ["Next.js","Gemini AI API","Shadcn","Rest API","Tailwind CSS"],
+      link: "https://reject-me.vercel.app/",
     },
     {
-      title: "Project 2",
-      id:"",
-      description: "This is a brief description of Project 2.",
-      imageUrl: "https://via.placeholder.com/300x200",
-      techStack: ["Next.js", "MongoDB", "Express"],
-      link: "#",
+      title: "Lock me In (5 + users) ",
+      id:"2",
+      description: "Lock-me-in is a Chrome extension that locks you into one website until your timer ends. If you try to leave? Boom — you're redirected right back. Annoying , I know , but you got to do what you got to do man. Stay focused. finish your work .",
+      imageUrl: lockme,
+      techStack: ["chrome-Extesion","JavaScript"," Chrome API","CSS","HTML"],
+      link: "https://github.com/RabdeepKaur/Lock-me-in",
     },
     {
-      title: "Project 3",
-      id:"",
-      description: "This is a brief description of Project 3.",
+      title: "Influencer",
+      id:"3",
+      description: "A comprehensive analytics dashboard for Instagram Reels that provides detailed insights, engagement metrics, sentiment analysis, and spam detection. ",
       imageUrl: "https://via.placeholder.com/300x200",
-      techStack: ["Three.js", "Blender", "GSAP"],
-      link: "#",
+      techStack: ["Next.js ", "TypeScript", "MongoDB", "Tailwind CSS", "Prisma","Apify SDK "],
+      link: "https://reel-olive.vercel.app/",
     },
   ];
   const CardData=[  
