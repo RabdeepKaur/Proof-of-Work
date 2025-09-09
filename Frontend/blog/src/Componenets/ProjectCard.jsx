@@ -8,9 +8,9 @@ function ProjectCard({ title, description, imageUrl, techStack, link }) {
   initial={{ opacity: 0, y: 50 }} 
   whileInView={{ opacity: 1, y: 0 }}   
   transition={{
-    delay: 0.5,
+    delay: 0.1,
     ease: "easeOut",
-    duration: 2
+    duration: 1
   }}
   viewport={{ once: true, amount: 0.3 }}
   className="bg-black/80 shadow-md rounded-lg p-6 mb-6 w-80 border-2 border-green-500  transform hover:scale-105 transition-transform duration-300"

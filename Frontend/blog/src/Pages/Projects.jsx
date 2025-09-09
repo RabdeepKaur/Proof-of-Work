@@ -70,7 +70,7 @@ function Projects() {
 
   <div className="flex flex-row gap-6 ">
 
-    <div className="flex-1 flex-col flex-wrap gap-4 overflow-y-auto px-9">
+    <div className="flex-1 flex-col flex-wrap gap-4  px-9">
       {projects.map((project, index) => (
         <ProjectCard key={index} {...project} />
       ))}

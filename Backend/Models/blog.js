@@ -7,7 +7,7 @@ const blogSchema = new mongoose.Schema({
   projectId: { type: String, required: true }, // the project are hard coded here 
   published: { type: Boolean, default: false },
   createdAt: { type: Date, default: Date.now },
-  updatedAt: { type: Date, default: Date.now }
+  updatedAt: { type: Date, default: Date.now },
 });
 
 module.exports = mongoose.model('Blog', blogSchema);

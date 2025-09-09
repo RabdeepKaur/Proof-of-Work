@@ -4,7 +4,7 @@ function Blog(){
     
 return(
     <>
-    <div className=" flex  gap-4 justify-end  px-4  bg-black text-white px-4 py-2 rounded  transition-colors">
+    <div className=" flex  gap-4 justify-end  px-4  bg-black text-white py-2 rounded  transition-colors">
       Blog page is under construction
             </div>
     </>

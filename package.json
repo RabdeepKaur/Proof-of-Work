@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "motion": "^12.23.12",
+    "typewriter-effect": "^2.22.0"
+  }
+}
