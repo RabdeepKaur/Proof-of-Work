@@ -1,6 +1,6 @@
 function Card({ title, description, imageUrl }) {
   return (
-    <div className="bg-black shadow-md rounded-lg p-6 mb-6 w-80 border-2 border-green-500 overflow-hidden">
+    <div className="bg-black shadow-md rounded-lg p-6 mb-6 w-80 border-2 border-green-500 overflow-hidden  transform hover:scale-105 transition-transform duration-300">
       {/* Project Image */}
       <img
         src={imageUrl}

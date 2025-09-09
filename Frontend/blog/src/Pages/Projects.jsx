@@ -12,6 +12,7 @@ function Projects() {
        imageUrl: landingpage,
       techStack: ["Next.js","Gemini AI API","Shadcn","Rest API","Tailwind CSS"],
       link: "https://reject-me.vercel.app/",
+      github:""
     },
     {
       title: "Lock me In (5 + users) ",
@@ -21,13 +22,23 @@ function Projects() {
       techStack: ["chrome-Extesion","JavaScript"," Chrome API","CSS","HTML"],
       link: "https://github.com/RabdeepKaur/Lock-me-in",
     },
+     {
+      title: "Previous year question ",
+      id:"3",
+      description: "Lock-me-in is a Chrome extension that locks you into one website until your timer ends. If you try to leave? Boom — you're redirected right back. Annoying , I know , but you got to do what you got to do man. Stay focused. finish your work .",
+      imageUrl: lockme,
+      techStack: ["chrome-Extesion","JavaScript"," Chrome API","CSS","HTML"],
+      link: "https://github.com/RabdeepKaur/Lock-me-in",
+      github:""
+    },
     {
       title: "Influencer",
-      id:"3",
+      id:"4",
       description: "A comprehensive analytics dashboard for Instagram Reels that provides detailed insights, engagement metrics, sentiment analysis, and spam detection. ",
       imageUrl: "https://via.placeholder.com/300x200",
       techStack: ["Next.js ", "TypeScript", "MongoDB", "Tailwind CSS", "Prisma","Apify SDK "],
       link: "https://reel-olive.vercel.app/",
+      github:""
     },
   ];
   const CardData=[  
@@ -51,12 +62,15 @@ function Projects() {
 
     return (
         <>
-     <div className="flex flex-col bg-black text-white p-8 m-10">
-  <h1 className="text-4xl font-bold mb-4 px-4">PROJECTS</h1>
+        <div className="flex flex-row gap-150 text-white mt-10">
+        <h1 className="text-4xl font-bold ml-30">PROJECTS</h1> 
+        <h1 className="text-4xl font-bold ">Blog</h1>
+        </div>
+     <div className="flex flex-col bg-black text-white p-4 m-1">
 
   <div className="flex flex-row gap-6 ">
 
-    <div className="flex-1 flex-col flex-wrap gap-4 overflow-y-auto">
+    <div className="flex-1 flex-col flex-wrap gap-4 overflow-y-auto px-9">
       {projects.map((project, index) => (
         <ProjectCard key={index} {...project} />
       ))}
