@@ -13,7 +13,7 @@ const generateToken = (id) => {
 // @route   POST /api/auth/register
 // @access  Public (but should be restricted in production)
 const register = asyncHandler(async (req, res) => {
-  const { username, email, password } = req.body;
+  const { email, password } = req.body;
   
   // Check if user exists
   const userExists = await User.findOne({
@@ -61,9 +61,9 @@ const register = asyncHandler(async (req, res) => {
 // @route   POST /api/auth/login
 // @access  Public
 const login = asyncHandler(async (req, res) => {
-  const { identifier, password } = req.body; // identifier can be email or username
+  const { email,username, password } = req.body; // identifier can be email or username
   
-  if (!identifier || !password) {
+  if (!email || !password) {
     return res.status(400).json({
       success: false,
       message: 'Please provide email/username and password'
@@ -71,7 +71,9 @@ const login = asyncHandler(async (req, res) => {
   }
   
   // Find user by email or username
-  const user = await User.findByEmailOrUsername(identifier);
+  const user = await User.findOne({
+  $or: [{ email }, { username }]
+});
   
   if (!user || !user.isActive) {
     return res.status(401).json({
