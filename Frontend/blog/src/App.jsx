@@ -14,6 +14,7 @@ function App() {
         {/* For author page only */}
        <Route path="/admin/login" element={<AuthLogin />} />
           <Route path="/admin/write" element={<Author />} />
+          
 
         {/* For home page and scrollable sections */}
         <Route
